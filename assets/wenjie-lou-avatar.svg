@@ -1,0 +1,17 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Wenjie Lou avatar placeholder</title>
+  <desc id="desc">A geometric portrait-style placeholder for a developer homepage.</desc>
+  <rect width="420" height="420" rx="20" fill="#1C2026"/>
+  <circle cx="210" cy="148" r="72" fill="#8AB4F8"/>
+  <path d="M92 366C104 286 147 244 210 244C273 244 316 286 328 366H92Z" fill="#81C995"/>
+  <path d="M151 155C174 113 251 112 273 155C250 140 174 140 151 155Z" fill="#14161A"/>
+  <circle cx="183" cy="157" r="8" fill="#14161A"/>
+  <circle cx="237" cy="157" r="8" fill="#14161A"/>
+  <path d="M190 188C203 198 218 198 231 188" stroke="#14161A" stroke-width="8" stroke-linecap="round"/>
+  <rect x="64" y="64" width="72" height="14" rx="7" fill="#F6BD60"/>
+  <rect x="284" y="64" width="72" height="14" rx="7" fill="#F6BD60"/>
+  <rect x="64" y="92" width="48" height="10" rx="5" fill="#757D8B"/>
+  <rect x="308" y="92" width="48" height="10" rx="5" fill="#757D8B"/>
+  <path d="M70 302C112 256 145 234 170 236" stroke="#2C333D" stroke-width="12" stroke-linecap="round"/>
+  <path d="M350 302C308 256 275 234 250 236" stroke="#2C333D" stroke-width="12" stroke-linecap="round"/>
+</svg>

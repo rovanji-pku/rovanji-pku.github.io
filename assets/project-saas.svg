@@ -1,0 +1,11 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">SaaS dashboard project preview</title>
+  <rect width="640" height="400" fill="#181C21"/>
+  <rect x="48" y="56" width="544" height="288" rx="18" fill="#1C2026" stroke="#2C333D" stroke-width="2"/>
+  <rect x="82" y="92" width="126" height="76" rx="10" fill="#8AB4F8"/>
+  <rect x="232" y="92" width="126" height="76" rx="10" fill="#81C995"/>
+  <rect x="382" y="92" width="126" height="76" rx="10" fill="#F6BD60"/>
+  <rect x="82" y="212" width="426" height="18" rx="9" fill="#757D8B"/>
+  <rect x="82" y="252" width="352" height="18" rx="9" fill="#757D8B"/>
+  <rect x="82" y="292" width="468" height="18" rx="9" fill="#757D8B"/>
+</svg>

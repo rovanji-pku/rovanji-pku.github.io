@@ -1,0 +1,380 @@
+:root {
+  color-scheme: dark;
+  --bg: #14161a;
+  --panel: #1c2026;
+  --panel-soft: #181c21;
+  --text: #e8eaed;
+  --muted: #a7adb8;
+  --subtle: #757d8b;
+  --line: #2c333d;
+  --accent: #8ab4f8;
+  --accent-strong: #b8d4ff;
+  --green: #81c995;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+.page {
+  width: min(980px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 56px 0 28px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+  padding-bottom: 38px;
+  border-bottom: 1px solid var(--line);
+}
+
+.avatar {
+  width: 210px;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin: -8px 0 8px;
+  font-size: clamp(2.2rem, 7vw, 4.1rem);
+  line-height: 1.04;
+  letter-spacing: 0;
+}
+
+h1 span {
+  color: var(--muted);
+  font-weight: 520;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.role {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.links a,
+.paper-links a {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-soft);
+  padding: 4px 10px;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.links a:hover,
+.paper-links a:hover {
+  border-color: color-mix(in srgb, var(--accent) 70%, var(--line));
+  text-decoration: none;
+}
+
+.section {
+  padding: 34px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.compact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+time,
+.meta,
+.venue,
+.compact-list span:last-child {
+  color: var(--subtle);
+}
+
+.paper {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.paper + .paper {
+  border-top: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
+}
+
+.thumb {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.authors {
+  margin-bottom: 7px;
+  color: var(--muted);
+}
+
+.authors strong {
+  color: var(--text);
+}
+
+.venue {
+  margin-top: -2px;
+  font-style: italic;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.compact-list li {
+  padding: 10px 0;
+  border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+}
+
+.item-title {
+  display: block;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.language-card {
+  position: relative;
+  min-height: 148px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 90% 18%, color-mix(in srgb, var(--tone) 36%, transparent), transparent 32%),
+    linear-gradient(160deg, color-mix(in srgb, var(--panel) 88%, var(--tone)), var(--panel-soft));
+  padding: 16px;
+}
+
+.language-card::after {
+  position: absolute;
+  right: -12px;
+  bottom: -42px;
+  color: color-mix(in srgb, var(--tone) 28%, transparent);
+  content: attr(data-code);
+  font-size: 4.8rem;
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.language-card h3 {
+  margin-top: 18px;
+  font-size: 1.16rem;
+}
+
+.language-card p {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.language-card strong {
+  color: var(--text);
+}
+
+.language-symbol {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--tone) 64%, var(--line));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--tone) 22%, var(--panel));
+  color: var(--text);
+  font-weight: 900;
+}
+
+.certificate-date {
+  display: block;
+  color: color-mix(in srgb, var(--muted) 88%, var(--tone));
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.chinese {
+  --tone: #f26d6d;
+}
+
+.french {
+  --tone: #8ab4f8;
+}
+
+.arabic {
+  --tone: #81c995;
+}
+
+.english {
+  --tone: #f6bd60;
+}
+
+.spanish {
+  --tone: #ff8f7d;
+}
+
+.experience {
+  display: grid;
+  gap: 18px;
+}
+
+.experience article {
+  padding-left: 16px;
+  border-left: 3px solid var(--line);
+}
+
+.experience article:hover {
+  border-left-color: var(--accent);
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+}
+
+.footer {
+  display: flex;
+  width: min(980px, calc(100% - 36px));
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0 auto;
+  padding: 18px 0 42px;
+  color: var(--subtle);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 30px;
+  }
+
+  .profile,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .language-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .paper {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    width: min(220px, 100%);
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  .page,
+  .footer {
+    width: min(100% - 28px, 980px);
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .links a {
+    flex: 1 1 auto;
+  }
+
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+}

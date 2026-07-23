@@ -1,0 +1,11 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Knowledge graph project preview</title>
+  <rect width="640" height="400" fill="#181C21"/>
+  <path d="M166 208L282 124L422 174L482 286L286 290L166 208Z" stroke="#2C333D" stroke-width="10"/>
+  <circle cx="166" cy="208" r="42" fill="#8AB4F8"/>
+  <circle cx="282" cy="124" r="36" fill="#81C995"/>
+  <circle cx="422" cy="174" r="44" fill="#F6BD60"/>
+  <circle cx="482" cy="286" r="34" fill="#8AB4F8"/>
+  <circle cx="286" cy="290" r="46" fill="#81C995"/>
+  <rect x="42" y="42" width="160" height="28" rx="8" fill="#757D8B"/>
+</svg>

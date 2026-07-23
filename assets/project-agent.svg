@@ -1,0 +1,11 @@
+<svg width="640" height="400" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Agent project preview</title>
+  <rect width="640" height="400" fill="#181C21"/>
+  <rect x="42" y="42" width="556" height="316" rx="18" fill="#1C2026" stroke="#2C333D" stroke-width="2"/>
+  <rect x="76" y="78" width="240" height="26" rx="7" fill="#8AB4F8"/>
+  <rect x="76" y="128" width="360" height="14" rx="7" fill="#757D8B"/>
+  <rect x="76" y="164" width="286" height="14" rx="7" fill="#757D8B"/>
+  <rect x="76" y="200" width="330" height="14" rx="7" fill="#757D8B"/>
+  <rect x="76" y="270" width="154" height="46" rx="10" fill="#81C995"/>
+  <path d="M444 132L512 200L444 268" stroke="#F6BD60" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
