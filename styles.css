@@ -200,6 +200,20 @@ time,
   margin-top: 8px;
 }
 
+.status-pill {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-soft);
+  padding: 4px 10px;
+  color: var(--subtle);
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
 .compact-list li {
   padding: 10px 0;
   border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
