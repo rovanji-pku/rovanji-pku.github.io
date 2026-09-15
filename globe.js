@@ -94,11 +94,13 @@
   });
   scene.addEventListener('keydown', e => { if(e.key === 'Escape') show(false); });
   const image = new Image();
+  image.decoding = 'async';
+  image.fetchPriority = 'high';
   image.onload = () => {
     const buffer = document.createElement('canvas'); buffer.width = tw = 1024; buffer.height = th = 512;
     const source = buffer.getContext('2d'); source.drawImage(image, 0, 0, tw, th);
     texture = source.getImageData(0,0,tw,th).data; render();
   };
   image.onerror = () => { scene.querySelector('.globe-controls small').textContent = 'Currently at Peking University · Beijing'; marker.hidden = true; };
-  image.src = 'assets/earth-day.jpg';
+  image.src = 'assets/earth.webp';
 })();

@@ -19,7 +19,7 @@ body::before {
   inset: -180px 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(#03061020, #03061050), url("assets/deep-space-hd.jpg") center center / cover no-repeat;
+  background: linear-gradient(#03061020, #03061050), url("assets/space-desktop.webp") center center / cover no-repeat;
   transform: translate3d(0, var(--space-offset, 0px), 0);
   will-change: transform;
 }
@@ -38,6 +38,13 @@ body::after {
 }
 @media (prefers-reduced-motion: reduce) {
   body::before, body::after { transform: none; will-change: auto; }
+}
+
+@media (min-width: 761px) and (min-resolution: 1.5dppx) {
+  body::before { background-image: linear-gradient(#03061020, #03061050), url("assets/space-retina.webp"); }
+}
+@media (max-width: 760px) {
+  body::before { background-image: linear-gradient(#03061020, #03061050), url("assets/space-mobile.webp"); }
 }
 
 ::selection { background: #8ab4f845; color: #fff; }
