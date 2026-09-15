@@ -227,7 +227,7 @@ time,
 
 .language-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
@@ -310,6 +310,10 @@ time,
 
 .spanish {
   --tone: #ff8f7d;
+}
+
+.persian {
+  --tone: #c4a1ef;
 }
 
 .experience {
