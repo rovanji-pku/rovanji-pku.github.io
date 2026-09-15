@@ -9,10 +9,19 @@
       content="Personal academic homepage for Wenjie Lou, an undergraduate student at Peking University interested in embodied intelligence, AI systems, and quantitative technology."
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="globe.js" defer></script>
   </head>
   <body>
+    <div class="site-shell">
     <main class="page">
       <header class="profile">
+        <div class="globe-scene" aria-label="Interactive Earth">
+          <canvas id="earth" tabindex="0" aria-label="Drag to rotate Earth. Use arrow keys to rotate, Home to return to Peking University.">Interactive globe showing Peking University in Beijing, China.</canvas>
+          <a class="pku-marker" href="https://www.pku.edu.cn/" target="_blank" rel="noreferrer" aria-label="Peking University homepage" aria-expanded="false"><span class="flag">PKU</span><span class="person" aria-hidden="true">●<br>▰<br>Ⅱ</span><span class="location-dot"></span></a>
+          <div class="globe-tooltip" hidden><strong>Peking University</strong><span>Beijing, China</span><span>Wenjie is currently here</span><a href="https://www.pku.edu.cn/" target="_blank" rel="noreferrer">Visit website ↗</a></div>
+          <div class="globe-controls"><span>BEIJING · 39.99° N, 116.31° E</span><button type="button" class="globe-reset">⌖ Back to PKU</button><small>Drag to explore · Currently at PKU</small></div>
+        </div>
         <img class="avatar" src="assets/profile.jpg" alt="Portrait of Wenjie Lou" />
         <div class="intro">
           <h1>Wenjie Lou <span>(&#27004;&#25991;&#39049;)</span></h1>
@@ -146,6 +155,8 @@
     <footer class="footer">
       <span>&copy; 2026 Wenjie Lou</span>
       <span>Last updated: August 2026</span>
+      <a href="https://esahubble.org/images/potw1610a/" target="_blank" rel="noreferrer">Deep space: NASA, ESA &amp; HST Frontier Fields (STScI)</a>
     </footer>
+    </div>
   </body>
 </html>
