@@ -333,6 +333,12 @@ time,
   border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
 }
 
+.awards-list li { padding: 16px 0; }
+.awards-list li:first-child { border-top: 0; padding-top: 0; }
+.awards-list h3 { color: var(--accent-strong); }
+.awards-list p { margin-bottom: 4px; }
+.awards-list time { font-size: 0.88rem; }
+
 .item-title {
   display: block;
   color: var(--text);
