@@ -333,11 +333,17 @@ time,
   border-top: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
 }
 
-.awards-list li { padding: 16px 0; }
-.awards-list li:first-child { border-top: 0; padding-top: 0; }
-.awards-list h3 { color: var(--accent-strong); }
-.awards-list p { margin-bottom: 4px; }
-.awards-list time { font-size: 0.88rem; }
+.awards-list { font-size: 0.9rem; line-height: 1.6; }
+.awards-list li {
+  display: grid;
+  grid-template-columns: 8px minmax(0, 1fr) auto;
+  gap: 0 10px;
+  align-items: baseline;
+  border: 0;
+  padding: 2px 0;
+}
+.awards-list li::before { content: "\2022"; color: var(--muted); }
+.awards-list time { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 
 .item-title {
   display: block;
